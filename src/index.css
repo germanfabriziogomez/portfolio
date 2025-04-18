@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@media (min-width: 280px) and (max-width:580px)
+{
+    .header, .nav{
+        display: flex !important;
+        flex-direction: column !important; 
+    }
+    p,a,label,button{
+        font-size: 12px !important;
+    }
+    h1{
+        font-size: 20px !important;
+    }
+    h3{
+        font-size: 15px !important;
+    }
+    .img-aboutme{
+        display: none;
+    }
+    .sobremi div, .section-projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        display: flex;
+        gap: 15px;
+    }
+    .contact {
+        width: 90%;
+    }
+}
+
+@media (min-width: 581px) and (max-width:650px)
+{
+    .section-home, .sobremi,.sobremi div, .section-projects{
+        margin:auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    p{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 25px !important;
+    }
+    .img-aboutme{
+        display: none;
+    }
+    .contact {
+        width: 90%;
+    }
+    .header{
+        display: flex;
+        gap: 7px;
+    }
+    button{
+        font-size: 15px !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width:750px) {
+
+    .contact {
+        width: 90%;
+    }
+    button{
+        font-size: 19px !important;
+    }
+}
