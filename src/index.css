@@ -45,6 +45,9 @@ h3{
     .contact {
         width: 90%;
     }
+    .section-home{
+        width: 90%;
+    }
 }
 
 @media (min-width: 581px) and (max-width:650px)

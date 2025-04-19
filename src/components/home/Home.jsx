@@ -1,7 +1,6 @@
 import React from 'react'
 import './images.js'
 import icons from './images.js'
-import './Home.css'
 
 const Home = () => {
 

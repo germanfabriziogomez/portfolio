@@ -15,7 +15,7 @@ El objetivo principal de este proyecto es **mostrar mis habilidades front-end**,
 
 El sitio está desplegado y accesible públicamente (link si lo tenés, por ejemplo en Netlify o Vercel):
 
-[🔗 Ver Portfolio en vivo](https://vercel.app)
+[🔗 Ver Portfolio en vivo](https://portfolio-mu-ivory-48.vercel.app/)
 
 
 ## 📬 Contacto
