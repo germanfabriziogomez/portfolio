@@ -2,7 +2,8 @@ import React from 'react'
 
 const Contact = () => {
 
-  const mensajeAlert = () => {
+  const mensajeAlert = (e) => {
+    e.preventDefault()
     alert("Tu mensaje fue enviado correctamente")
   }
   return (
