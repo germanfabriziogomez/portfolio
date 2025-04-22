@@ -3,11 +3,15 @@ import { Link, Outlet } from 'react-router-dom'
 import FotoDePerfil from '../../assets/foto_de_perfil.png'
 import SolIcon from '../../assets/sol.png'
 import LunaIcon from '../../assets/luna.png'
+import DownloadIcon from '../../assets/icon-download.png'
+import DownloadIconWhite from '../../assets/icon-download-white.png'
 import './Header.css'
 
 const Header = () => {
 
   const [icon, setIcon] = useState(LunaIcon)
+  const [downloadIcon, setDownloadIcon] = useState(DownloadIcon)
+
   const [isDarkMode,setIsDarkMode] = useState(false)
 
   const cambiarA = (colorFondo, colorTexto) => {
@@ -20,19 +24,23 @@ const Header = () => {
     if (icon == SolIcon) {
       cambiarA("black", "white")
       setIsDarkMode(true)
+      setDownloadIcon(DownloadIconWhite)
     }
     else {
       cambiarA("white", "black")
       setIsDarkMode(false)
+      setDownloadIcon(DownloadIcon)
     }
   }, [icon])
 
   const cambiarIcono = () => {
     if (icon == SolIcon) {
       setIcon(LunaIcon)
+      
     }
     else {
       setIcon(SolIcon)
+      
     }
   }
 
@@ -51,6 +59,7 @@ const Header = () => {
           <Link to={"/about-me"} className='px-3 py-1 hover:scale-110 duration-300  font-medium rounded'  onClick={() => cambiarColorTexto('sobremi')} style={{ color: activeLink === 'sobremi' ? 'rgb(96,216,176)' : (isDarkMode ? 'white' : 'black') }}>Sobre mí</Link>
           <Link to={"/projects"} className='px-3 py-1 hover:scale-110 duration-300  font-medium rounded'  onClick={() => cambiarColorTexto('proyectos')} style={{ color: activeLink === 'proyectos' ? 'rgb(96,216,176)' : (isDarkMode ? 'white' : 'black') }}>Proyectos</Link>
           <Link to={"/contact"} className='px-3 py-1 hover:scale-110 duration-300  font-medium rounded'  onClick={() => cambiarColorTexto('contacto')} style={{ color: activeLink === 'contacto' ? 'rgb(96,216,176)' : (isDarkMode ? 'white' : 'black') }}>Contacto</Link>
+          <a href="./CurriculumVitae.pdf" download ><button className='flex cursor-pointer px-3 py-1 hover:scale-110 duration-300  font-medium rounded cursor-pointer'><img src={downloadIcon} alt="" />Descargar CV</button></a>
         </nav>
 
         <button className='cursor-pointer' onClick={cambiarIcono}><img src={icon} /></button>
