@@ -8,7 +8,7 @@ const Projects = () => {
     {
       name: "CRUD en MongoDB",
       description: "Este proyecto es una aplicación que implementa las operaciones básicas de un sistema CRUD (Crear, Leer, Actualizar, Eliminar) utilizando MongoDB",
-      tecnologias: ["NodeJS", "Mongoose","Typescript","Javascript","otro"],
+      tecnologias: ["NodeJS", "Mongoose","Typescript","Javascript"],
       img: "",
       link:"github.com/germanfabriziogomez/CRUD_MongoDB",
       url_project: "https://github.com/germanfabriziogomez/CRUD_MongoDB"
@@ -20,6 +20,14 @@ const Projects = () => {
       img: "ProjectC" ,
       link:"github.com/germanfabriziogomez/CPlusPlus_ABM.git",
       url_project: "https://github.com/germanfabriziogomez/CPlusPlus_ABM.git"
+    },
+    {
+      name: "API REST con Express",
+      description: "Este proyecto implementa una API REST simple de libros",
+      tecnologias: ["Express","Typescript","MongoDB","Node"],
+      img: "" ,
+      link:"github.com/germanfabriziogomez/CRUD_MongoDB",
+      url_project: "https://github.com/germanfabriziogomez/CRUD_MongoDB"
     }
     
   ];
